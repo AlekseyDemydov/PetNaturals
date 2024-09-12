@@ -150,27 +150,79 @@ ul {
   margin-top: 20px;
 }
 .order {
-    width: 270px;
-    height: 462px;
-    border-radius: 20px 20px 10px 10px;
-    background: #fdfcfc;
-    position: relative; /* Контейнер для позиціювання відносно нього */
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  }
-  
-  .rectangle {
-    position: absolute; /* Розміщує `rectangle` відносно контейнера `.order` */
-    top: 0;
-    left: 0px;
-    width: 270px;
-height: 190px;
-    fill: #7eb2e1; /* Фарба для SVG */
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    z-index: 1; /* Низький `z-index`, щоб `rectangle` був позаду інших елементів */
-  }
-  
-  .timer,
-  .date {
-    position: relative; /* Позиціонує елементи на передньому плані */
-    z-index: 10; /* Вищий `z-index`, щоб бути поверх `rectangle` */
-  }
+  width: 270px;
+  height: 462px;
+  text-align: center;
+  border-radius: 20px 20px 10px 10px;
+  background: #fdfcfc;
+  padding-top: 23px;
+  position: relative; /* Контейнер для позиціювання відносно нього */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.rectangle {
+  position: absolute; /* Розміщує `rectangle` відносно контейнера `.order` */
+  top: 0;
+  left: 0px;
+  width: 270px;
+  height: 190px;
+  fill: #7eb2e1; /* Фарба для SVG */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 1; /* Низький `z-index`, щоб `rectangle` був позаду інших елементів */
+}
+
+.timer {
+  position: relative; /* Позиціонує елементи на передньому плані */
+  z-index: 10; /* Вищий `z-index`, щоб бути поверх `rectangle` */
+  color: #f6e791;
+margin-top: 8px;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.titleTime {
+  color: #483c08;
+  margin: 0;
+  font-family: Roboto;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.price{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.noprice{
+  color: #6B6B6B;
+margin: 0 20px 0 0;
+font-family: Roboto;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.noprice::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110.064px;
+  height: 2px; /* Товщина лінії */
+  background-color: #F6BE91; /* Колір лінії */
+  transform: rotate(-18deg); /* Кут накреслення */
+  transform-origin: left bottom; /* Вирівнює лінію по краю */
+  z-index: 1;
+}
+.actprice{
+  color: #483C08;
+margin: 0;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}

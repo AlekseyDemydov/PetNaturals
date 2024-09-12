@@ -8,7 +8,7 @@
           const seconds = countdownTime % 60;  // Залишок секунд
   
           // Форматуємо значення так, щоб вони завжди були двозначними
-          const formattedHours = hours < 10 ? '0' + hours : hours;
+          const formattedHours = hours < 10 ? + hours : hours;
           const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
           const formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
   
