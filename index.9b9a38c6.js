@@ -1,0 +1,2 @@
+var countdownTime=7200;function updateCountdown(){var t=Math.floor(countdownTime/3600),n=Math.floor(countdownTime%3600/60),o=countdownTime%60,e=t<10?+t:t,c=n<10?"0"+n:n,a=o<10?"0"+o:o;document.getElementById("countdown").textContent="".concat(e,":").concat(c,":").concat(a),--countdownTime<0&&(clearInterval(timerInterval),document.getElementById("countdown").textContent="Time's up!")}var timerInterval=setInterval(updateCountdown,1e3);
+//# sourceMappingURL=index.9b9a38c6.js.map
