@@ -160,10 +160,10 @@ ul {
   
   .rectangle {
     position: absolute; /* Розміщує `rectangle` відносно контейнера `.order` */
-    top: 10;
-    left: -4px;
-    width: 100%; /* Заповнює ширину контейнера */
-    height: 100%; /* Заповнює висоту контейнера */
+    top: 0;
+    left: 0px;
+    width: 270px;
+height: 190px;
     fill: #7eb2e1; /* Фарба для SVG */
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     z-index: 1; /* Низький `z-index`, щоб `rectangle` був позаду інших елементів */
