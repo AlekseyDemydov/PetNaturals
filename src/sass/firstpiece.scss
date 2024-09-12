@@ -1,0 +1,176 @@
+.container {
+  width: 1920px;
+  height: 844px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/firsttop.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 23px;
+  padding-right: 352px;
+  padding-left: 389px;
+
+  .header {
+    display: flex;
+  }
+}
+
+.logoBox {
+  position: relative;
+
+  margin-left: 17px;
+}
+
+.cloud {
+  position: relative;
+  width: 329px;
+  height: 113px;
+}
+
+.logo {
+  position: absolute;
+  width: 283px;
+  height: 89px;
+  top: 12px;
+  left: 26px;
+}
+.navigation {
+  margin-left: 387px;
+  margin-top: 4px;
+  width: 446px;
+  padding-top: 41px;
+  padding-left: 77px;
+  background-image: url(../images/Group.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  .itemNav {
+    &:not(:last-child) {
+      margin-right: 51px;
+    }
+    margin: 0;
+    color: #715d00;
+    // letter-spacing: -1.9px;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23.44px;
+    text-decoration: underline;
+  }
+}
+.title {
+  &:not(:last-child) {
+    margin: 16px 0 0 282px;
+  }
+  margin: 0;
+  color: #f9e994;
+  margin-left: 364px;
+  font-family: Roboto;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.description {
+  display: flex;
+}
+.descriptionText {
+  margin: 36px 0 60px 0;
+  color: #f6f7e4;
+  width: 439px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 130.769% */
+}
+
+.blueBox {
+  width: 323px;
+  height: 266px;
+  border-radius: 20px;
+  background: #7fb3e1;
+  padding: 35px 0 0 35px;
+}
+ul {
+  list-style-type: none; /* Вимикаємо стандартні маркери списку */
+  padding-left: 0; /* Вирівнюємо текст по лівому краю */
+  margin: 0;
+}
+
+.blueDes {
+  &:first-child {
+    margin-bottom: 19px;
+    width: 257.984px;
+  }
+  &:nth-child(2) {
+    margin-bottom: 16px;
+  }
+  &:nth-child(3) {
+    width: 229.47px;
+  }
+  position: relative;
+  color: #dfe4de;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 35px;
+}
+
+.blueDes::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18.104px;
+  height: 24px; /* Висота зображення */
+  background-image: url('../images/paw.png'); /* Шлях до твого зображення PNG */
+  background-size: contain; /* Адаптація зображення під задані розміри */
+  background-repeat: no-repeat;
+}
+.boxCat {
+  margin-top: 83px;
+  position: relative;
+}
+.cat {
+  position: absolute;
+  left: -200px;
+  top: -28px;
+}
+.timer {
+  font-size: 48px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+.order {
+    width: 270px;
+    height: 462px;
+    border-radius: 20px 20px 10px 10px;
+    background: #fdfcfc;
+    position: relative; /* Контейнер для позиціювання відносно нього */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .rectangle {
+    position: absolute; /* Розміщує `rectangle` відносно контейнера `.order` */
+    top: 10;
+    left: -4px;
+    width: 100%; /* Заповнює ширину контейнера */
+    height: 100%; /* Заповнює висоту контейнера */
+    fill: #7eb2e1; /* Фарба для SVG */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 1; /* Низький `z-index`, щоб `rectangle` був позаду інших елементів */
+  }
+  
+  .timer,
+  .date {
+    position: relative; /* Позиціонує елементи на передньому плані */
+    z-index: 10; /* Вищий `z-index`, щоб бути поверх `rectangle` */
+  }
