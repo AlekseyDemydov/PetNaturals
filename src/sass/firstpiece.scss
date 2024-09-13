@@ -1,3 +1,5 @@
+
+
 .container {
   width: 1920px;
   height: 844px;
@@ -24,13 +26,11 @@
 .cloud {
   position: relative;
   width: 329px;
-  height: 113px;
 }
 
 .logo {
   position: absolute;
   width: 283px;
-  height: 89px;
   top: 12px;
   left: 26px;
 }
@@ -89,10 +89,9 @@
 
 .blueBox {
   width: 323px;
-  height: 266px;
   border-radius: 20px;
   background: #7fb3e1;
-  padding: 35px 0 0 35px;
+  padding: 35px 0 28px 35px;
 }
 ul {
   list-style-type: none; /* Вимикаємо стандартні маркери списку */
@@ -136,11 +135,13 @@ ul {
 .boxCat {
   margin-top: 83px;
   position: relative;
+  z-index: 1;
 }
 .cat {
   position: absolute;
   left: -200px;
   top: -28px;
+  width: 710px;
 }
 .timer {
   font-size: 48px;
@@ -151,13 +152,15 @@ ul {
 }
 .order {
   width: 270px;
-  height: 462px;
   text-align: center;
   border-radius: 20px 20px 10px 10px;
   background: #fdfcfc;
-  padding-top: 23px;
+  padding: 23px 24px 20px 24px;
   position: relative; /* Контейнер для позиціювання відносно нього */
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 433px;
+  margin-top: 2px;
+  position: relative;
 }
 
 .rectangle {
@@ -166,16 +169,16 @@ ul {
   left: 0px;
   width: 270px;
   height: 190px;
-  fill: #7eb2e1; /* Фарба для SVG */
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  z-index: 1; /* Низький `z-index`, щоб `rectangle` був позаду інших елементів */
+  z-index: 2; /* Низький `z-index`, щоб `rectangle` був позаду інших елементів */
+  
 }
 
 .timer {
   position: relative; /* Позиціонує елементи на передньому плані */
   z-index: 10; /* Вищий `z-index`, щоб бути поверх `rectangle` */
   color: #f6e791;
-margin-top: 8px;
+  margin-top: 8px;
   font-family: Roboto;
   font-size: 36px;
   font-style: normal;
@@ -183,46 +186,131 @@ margin-top: 8px;
   line-height: normal;
 }
 .titleTime {
+  position: relative;
   color: #483c08;
   margin: 0;
+  z-index: 100;
   font-family: Roboto;
   font-size: 33px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.price{
+.price {
   display: flex;
   align-items: center;
   position: relative;
+  z-index: 10;
 }
-.noprice{
-  color: #6B6B6B;
-margin: 0 20px 0 0;
+.noprice {
+  color: #6b6b6b;
+  margin: 0 20px 0 0;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 10;
+}
+.noprice::after {
+  content: '';
+  position: absolute;
+  top: 40;
+  left: 0;
+  width: 110.064px;
+  height: 2px; /* Товщина лінії */
+  background-color: #f6be91; /* Колір лінії */
+  transform: rotate(-18deg); /* Кут накреслення */
+  transform-origin: left bottom; /* Вирівнює лінію по краю */
+  z-index: 1;
+}
+.actprice {
+  color: #483c08;
+  margin: 0;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.formIn {
+  margin-top: 54px;
+  margin-bottom: 15px;
+}
+
+.inputWrapper {
+  position: relative; /* Це дозволяє нам позиціонувати зображення всередині обгортки */
+  width: 222px; /* Задайте ширину обгортки, що відповідає ширині інпуту */
+}
+
+.inName {
+  width: 100%; /* Ширина інпуту адаптується до ширини обгортки */
+  height: 50px;
+  border-radius: 25px;
+  padding-left: 55px;
+  border: none;
+  background-color: rgba(243, 239, 239, 0.90);
+  color: #777;
+
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  box-sizing: border-box; /* Забезпечує, що падінг враховується в загальній ширині */
+}
+
+.inputWrapper::before {
+  content: ''; 
+  position: absolute; 
+  top: 50%;
+  left: 17px; 
+  transform: translateY(-50%); 
+  height: 24px; 
+  width: 24px;
+  background-image: url('../images/pawshadow.png'); /* Перевірте шлях до зображення */
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.btnOrder{
+  width: 222px;
+height: 50px;
+background-color: #A1D337;
+  border: none;
+  color: #FFF;
+margin-top: 15px;
 font-family: Roboto;
 font-size: 30px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+border-radius: 25px;
 }
-.noprice::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 110.064px;
-  height: 2px; /* Товщина лінії */
-  background-color: #F6BE91; /* Колір лінії */
-  transform: rotate(-18deg); /* Кут накреслення */
-  transform-origin: left bottom; /* Вирівнює лінію по краю */
-  z-index: 1;
-}
-.actprice{
-  color: #483C08;
-margin: 0;
+.orderDate{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 28px;
+  color: #444;
+
+text-align: center;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 font-family: Roboto;
-font-size: 36px;
+font-size: 18px;
 font-style: normal;
-font-weight: 700;
+font-weight: 400;
 line-height: normal;
+  p{
+    margin: 0;
+  }
 }
+
+
+
+
+
+

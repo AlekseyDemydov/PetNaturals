@@ -1,0 +1,299 @@
+@media screen and (max-width: 1140px) {
+    .container {
+        width: 100%;
+        padding: 12px 45px 0 45px;
+    }
+    .logoBox {
+        position: relative;
+      
+        margin-left: 7px;
+      }
+      
+      .cloud {
+        position: relative;
+        width: 150px;
+      }
+      
+      .logo {
+        width: 120px;
+        position: absolute;
+        top: 6px;
+        left: 18px;
+      }
+      .navigation {
+        margin-left: auto;
+        margin-top: 4px;
+        width: 350px;
+        padding-top: 14px;
+        padding-left: 33px;
+        background-image: url(../images/Group.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        .itemNav {
+          &:not(:last-child) {
+            margin-right: 12px;
+          }
+          margin: 0;
+          color: #715d00;
+          font-family: Roboto, sans-serif;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 23.44px;
+          text-decoration: underline;
+        }
+      }
+      .title {
+        &:not(:last-child) {
+            margin: 0 auto;
+        }
+        margin: 0;
+        color: #f9e994;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      .description {
+        display: flex;
+      }
+      .descriptionText {
+        margin: 36px 0 30px 0;
+        color: #f6f7e4;
+        width: 339px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 34px; /* 130.769% */
+      }
+      
+      .blueBox {
+        width: 253px;
+        border-radius: 20px;
+        background: #7fb3e1;
+        padding: 35px 0 28px 25px;
+      }
+      ul {
+        list-style-type: none; /* Вимикаємо стандартні маркери списку */
+        padding-left: 0; /* Вирівнюємо текст по лівому краю */
+        margin: 0;
+      }
+      
+      .blueDes {
+        &:first-child {
+          margin-bottom: 19px;
+          width: 100%;
+        }
+        &:nth-child(2) {
+          margin-bottom: 16px;
+        }
+        &:nth-child(3) {
+          width: 100%;
+        }
+        position: relative;
+        color: #dfe4de;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-left: 35px;
+      }
+      
+      .blueDes::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18.104px;
+        height: 24px; /* Висота зображення */
+        background-image: url('../images/paw.png'); /* Шлях до твого зображення PNG */
+        background-size: contain; /* Адаптація зображення під задані розміри */
+        background-repeat: no-repeat;
+      }
+      .boxCat {
+        margin-top: 83px;
+        position: relative;
+        z-index: 1;
+      }
+      .cat {
+        position: absolute;
+        top: 20px;
+        left: -150px;
+        width: 510px;
+      }
+      .timer {
+        font-size: 48px;
+        font-family: Arial, sans-serif;
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .order {
+        width: 270px;
+        text-align: center;
+        border-radius: 20px 20px 10px 10px;
+        background: #fdfcfc;
+        padding: 23px 24px 20px 24px;
+        position: relative; /* Контейнер для позиціювання відносно нього */
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-left: 300px;
+        margin-top: 2px;
+        position: relative;
+      }
+      
+      .rectangle {
+        position: absolute; /* Розміщує `rectangle` відносно контейнера `.order` */
+        top: 0;
+        left: 0px;
+        width: 270px;
+        height: 190px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        z-index: 2; /* Низький `z-index`, щоб `rectangle` був позаду інших елементів */
+        
+      }
+      
+      .timer {
+        position: relative; /* Позиціонує елементи на передньому плані */
+        z-index: 10; /* Вищий `z-index`, щоб бути поверх `rectangle` */
+        color: #f6e791;
+        margin-top: 8px;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .titleTime {
+        position: relative;
+        color: #483c08;
+        margin: 0;
+        z-index: 100;
+        font-family: Roboto;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .price {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+      }
+      .noprice {
+        color: #6b6b6b;
+        margin: 0 20px 0 0;
+        font-family: Roboto;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        z-index: 10;
+      }
+      .noprice::after {
+        content: '';
+        position: absolute;
+        top: 40;
+        left: 0;
+        width: 110.064px;
+        height: 2px; /* Товщина лінії */
+        background-color: #f6be91; /* Колір лінії */
+        transform: rotate(-18deg); /* Кут накреслення */
+        transform-origin: left bottom; /* Вирівнює лінію по краю */
+        z-index: 1;
+      }
+      .actprice {
+        color: #483c08;
+        margin: 0;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      
+      
+      .formIn {
+        margin-top: 54px;
+        margin-bottom: 15px;
+      }
+      
+      .inputWrapper {
+        position: relative; /* Це дозволяє нам позиціонувати зображення всередині обгортки */
+        width: 222px; /* Задайте ширину обгортки, що відповідає ширині інпуту */
+      }
+      
+      .inName {
+        width: 100%; /* Ширина інпуту адаптується до ширини обгортки */
+        height: 50px;
+        border-radius: 25px;
+        padding-left: 55px;
+        border: none;
+        background-color: rgba(243, 239, 239, 0.90);
+        color: #777;
+      
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+        box-sizing: border-box; /* Забезпечує, що падінг враховується в загальній ширині */
+      }
+      
+      .inputWrapper::before {
+        content: ''; 
+        position: absolute; 
+        top: 50%;
+        left: 17px; 
+        transform: translateY(-50%); 
+        height: 24px; 
+        width: 24px;
+        background-image: url('../images/pawshadow.png'); /* Перевірте шлях до зображення */
+        background-size: contain; 
+        background-repeat: no-repeat; 
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+      .btnOrder{
+        width: 222px;
+      height: 50px;
+      background-color: #A1D337;
+        border: none;
+        color: #FFF;
+      margin-top: 15px;
+      font-family: Roboto;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      border-radius: 25px;
+      }
+      .orderDate{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 28px;
+        color: #444;
+      
+      text-align: center;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+        p{
+          margin: 0;
+        }
+      }
+}
+
+
