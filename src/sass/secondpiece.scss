@@ -1,0 +1,93 @@
+.secondBox {
+  width: 1920px;
+  margin: 0 auto;
+  padding: 100px 0;
+  position: relative;
+}
+.fon {
+  position: absolute; /* Щоб фон був за елементами */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Нижчий індекс, щоб фон був позаду */
+}
+
+.fon img {
+  width: 100%; /* Зображення розтягнеться на весь контейнер */
+  height: 100%;
+  object-fit: cover; /* Підганяє зображення під розміри контейнера */
+}
+.secondTitle {
+  margin-top: 0;
+  margin-bottom: 61px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #f9e994 0%, #537d13 56.25%, #483c08 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.items {
+  display: flex;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.item {
+  border-radius: 20px;
+  background: #f6e791;
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  width: 305px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position:50% 10%;
+  &:not(:last-child) {
+    margin-right: 85px;
+  }
+}
+.desItem {
+  margin-top: 206px;
+  border-radius: 20px;
+  background: rgba(161, 211, 55, 0.4);
+  padding: 26px 17px;
+  width: 275px;
+  height: 218px;
+  h3 {
+    color: #fff;
+margin: 0 0 19px 0;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  p {
+    color: #483c08;
+
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.item:nth-child(1){
+  background-image: url(../images/img1.png);
+}
+.item:nth-child(2){
+  background-image: url(../images/img2.png);
+}
+.item:nth-child(3){
+  background-image: url(../images/img3.png);
+}

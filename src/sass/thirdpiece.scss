@@ -1,0 +1,57 @@
+.thirdBox {
+  width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  padding: 99px 428px 197px;
+  background: 
+    url(../images/pngegg.png) bottom no-repeat, /* зображення з позиціюванням */
+    linear-gradient(
+      180deg,
+      #e1edf8 0%,
+      rgba(127, 179, 225, 0) 59.37%,
+      rgba(0, 0, 0, 0.25) 100%
+    );
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.thirdTitle {
+  color: #537d13;
+margin: 0 0 58px 0;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.endBox{
+  display: flex;
+  align-items: center;
+}
+.yeText{
+  color: #483C08;
+
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 23px;
+}
+.intext{
+  padding: 40px;
+  width: 622px;
+}
+.yeBox{
+  width: 760px;
+  height: 354px;
+background-image: url(../images/Rectangleye.png);
+background-repeat: no-repeat;
+background-size: auto;
+p{
+  margin: 0;
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
+
+}
